@@ -1,0 +1,146 @@
+:root {
+  --brand: #1aa6a6;
+  --brand-dark: #128f8f;
+  --bg-soft: #f4f7f8;
+  --text-main: #2f3a42;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.navbar-brand {
+  color: var(--brand-dark) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.btn-brand {
+  background-color: var(--brand);
+  border: 1px solid var(--brand);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-outline-brand {
+  border: 1px solid var(--brand);
+  color: var(--brand-dark);
+  font-weight: 600;
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand:focus {
+  background: var(--brand);
+  color: #fff;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #eef7f8 100%);
+  padding-top: 6.5rem;
+}
+
+.hero-card,
+.about-highlight,
+.trust-card,
+.map-placeholder {
+  background-color: #fff;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-card,
+.trust-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover,
+.trust-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon,
+.trust-card i,
+.about-icon,
+.map-icon,
+.hero-card i {
+  color: var(--brand);
+}
+
+.service-icon,
+.about-icon,
+.map-icon {
+  font-size: 1.6rem;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.contact-list i {
+  color: var(--brand);
+  margin-top: 0.25rem;
+}
+
+.contact-list a,
+.footer a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.contact-list a:hover,
+.footer a:hover {
+  color: var(--brand-dark);
+}
+
+.map-placeholder {
+  min-height: 280px;
+  border: 2px dashed #c6d4d8;
+}
+
+.footer {
+  background: #0f2d33;
+  color: #dbe5e8;
+}
+
+.footer a {
+  color: #dbe5e8;
+}
+
+@media (max-width: 991.98px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+}
